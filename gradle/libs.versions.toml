@@ -1,0 +1,12 @@
+[versions]
+jankson = "1.2.1"
+assertj = "3.19.0"
+jetbrains-annotations = "20.1.0"
+junit = "5.7.2"
+
+[libraries]
+jankson = { module = "blue.endless:jankson", version.ref = "jankson" }
+assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrains-annotations" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
