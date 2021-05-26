@@ -124,7 +124,7 @@ public final class RecordAdapter<R extends Record> implements BiFunction<R, Mars
      * @throws NullPointerException     if the class is null
      * @throws IllegalArgumentException if the class is not a record
      * @throws IllegalArgumentException if the accessor methods or the constructor cannot be accessed
-     * @throws IllegalArgumentException if there are multiple components with the name serialised name
+     * @throws IllegalArgumentException if there are multiple components with the same serialised name
      */
     @SuppressWarnings("unchecked")
     public static <R extends Record> RecordAdapter<R> of(Class<R> type) {
@@ -150,7 +150,7 @@ public final class RecordAdapter<R extends Record> implements BiFunction<R, Mars
      * @throws NullPointerException     if the builder or the class is null
      * @throws IllegalArgumentException if the class is not a record
      * @throws IllegalArgumentException if the accessor methods or the constructor cannot be accessed
-     * @throws IllegalArgumentException if there are multiple components with the name serialised name
+     * @throws IllegalArgumentException if there are multiple components with the same serialised name
      */
     public static <R extends Record> Jankson.Builder registerFor(Jankson.Builder builder, Class<R> type) {
         Objects.requireNonNull(builder, "jankson builder");
